@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisdom Quotes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Wisdom</h1>
+            <p class="subtitle">Timeless quotes from transformative books</p>
+        </header>
+
+        <main class="main">
+            <div class="quote-card" id="quote-card">
+                <div class="quote-content">
+                    <blockquote class="quote-text" id="quote-text">
+                        Loading wisdom...
+                    </blockquote>
+                    <div class="quote-meta">
+                        <cite class="quote-book" id="quote-book"></cite>
+                        <span class="quote-author" id="quote-author"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-primary" id="new-quote-btn">
+                    New Quote
+                </button>
+                <button class="btn btn-secondary" id="share-btn">
+                    Share
+                </button>
+            </div>
+
+            <div class="book-filters">
+                <button class="filter-btn active" data-book="all">All</button>
+                <button class="filter-btn" data-book="The Alchemist">The Alchemist</button>
+                <button class="filter-btn" data-book="Atomic Habits">Atomic Habits</button>
+                <button class="filter-btn" data-book="21 Lessons for the 21st Century">21 Lessons</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Curated quotes from life-changing literature</p>
+        </footer>
+    </div>
+
+    <div class="share-modal" id="share-modal">
+        <div class="modal-content">
+            <h3>Share this wisdom</h3>
+            <div class="share-quote" id="share-quote-text"></div>
+            <div class="share-options">
+                <button class="share-btn" id="copy-btn">Copy Text</button>
+                <button class="share-btn" id="close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
